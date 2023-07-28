@@ -7,7 +7,7 @@
 <br>总所周知, 任何非0自然数除以一个`分解素因数, 其中包括除了2或5以外的素数的数`, 都无法除尽。<br/>
 <br>而仔细观察, 2 * 5 = 10, 10正是十进制数字的基数。<br/>
 <br>而在程序中, 除法的求小数部分大概可以用这样一个函数概括:<br/>
-```
+```c
 int main(void)
 {
 	unsigned int a = 3141; //被除数
@@ -35,34 +35,34 @@ int main(void)
 
 # 编译
 ## Windows
-```
+```shell
 gcc *.c *.h -o thgenpwd.exe
 ```
 ## Linux
-```
+```shell
 gcc *.c *.h -o thgenpwd
 ```
 
 # 用法
 ## 直接作为控制台程序来用
-```
+```shell
 thgenpwd [mainpwd] [name] [size]
 ```
 <br>如果参数只有`mainpwd`, 那么接下来你就得输入`name`和`size`。<br/>
 <br>如果参数有`mainpwd`和`name`, 那么接下来你只需输入`size`。<br/>
 <br>如果参数全部写了, 那接下来你就什么也不用写。<br/>
 <br>E.g:<br>
-```
+```shell
 thgenpwd mypwd Google 16
 ```
 ## 作为库使用
 <br>作为库使用只需要`GpAPI.c`和`GpAP.h`两个文件。<br/>
 <br>引用:<br/>
-```
+```c
 #include "GpAPI.h"
 ```
 <br>`GpAPI.h`提供了两个方法:<br/>
-```
+```c
 void GenPasswd(FILE *outstream, int64_t a, int64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 ```
@@ -77,7 +77,7 @@ void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, 
 <br>`pwd_chars`: 特殊字符的数组。(如果为NULL, 将使用默认值, 即`DEFAULT_PWD_CHARS`)<br/>
 <br>`pwd_chars_count`: 特殊字符数组的长度。(如果`pwd_chars`为NULL, 将会使用`DEFAULT_PWD_CHARS`的长度)<br/>
 ### 例子:
-```
+```c
 #include <stdio.h>
 #include "GpAPI.h"
 

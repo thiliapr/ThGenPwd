@@ -34,11 +34,13 @@ int main(int argc, char const *argv[])
 	{
 		printf("Main Password (E.g: mypwd_someone) (No Space) = ");
 		fgets(args[0], 16, stdin);
+		args[1][strlen(args[1]) - 1] = 0;
 	}
 	if (argc < 3)
 	{
 		printf("Name of Sevice (E.g: Google) = ");
 		fgets(args[1], 16, stdin);
+		args[1][strlen(args[1]) - 1] = 0;
 	}
 	if (argc > 3)
 	{

@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
 	{
 		printf("Main Password (E.g: mypwd_someone) (No Space) = ");
 		fgets(args[0], 16, stdin);
-		args[1][strlen(args[1]) - 1] = 0;
+		args[0][strlen(args[0]) - 1] = 0;
 	}
 	if (argc < 3)
 	{

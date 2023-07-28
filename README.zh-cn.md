@@ -66,7 +66,7 @@ thgenpwd mypwd Google 16
 void GenPasswd(FILE *outstream, int64_t a, int64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 ```
-<br>其中名称的解释:<br/>
+### 其中名称的解释
 <br>`outstream`: 输出的文件流<br/>
 <br>`GenPasswd`的`a`: 被除数<br/>
 <br>`GenPasswd`的`b`: 除数<br/>
@@ -76,7 +76,7 @@ void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, 
 <br>`sizedst`: 目前文件大小的指针, 可以在外部显示进度。(如果为NULL, 将会使用函数内的变量)<br/>
 <br>`pwd_chars`: 特殊字符的数组。(如果为NULL, 将使用默认值, 即`DEFAULT_PWD_CHARS`)<br/>
 <br>`pwd_chars_count`: 特殊字符数组的长度。(如果`pwd_chars`为NULL, 将会使用`DEFAULT_PWD_CHARS`的长度)<br/>
-<br>例子:<br/>
+### 例子:
 ```
 #include <stdio.h>
 #include "GpAPI.h"

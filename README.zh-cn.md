@@ -63,7 +63,7 @@ thgenpwd mypwd Google 16
 ```
 <br>`GpAPI.h`提供了两个方法:<br/>
 ```c
-void GenPasswd(FILE *outstream, int64_t a, int64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 ```
 ### 其中名称的解释

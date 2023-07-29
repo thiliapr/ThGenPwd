@@ -31,7 +31,7 @@ void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, 
 	GenPasswd(outstream, BKDRHash(a), BKDRHash(b), maxsize, sizedst, pwd_chars, pwd_chars_count);
 }
 
-void GenPasswd(FILE *outstream, int64_t a, int64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
+void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
 {
 	//Setting env
 	unsigned int size = 0;

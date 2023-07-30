@@ -104,7 +104,7 @@ _Bool isprime(unsigned int number)
  * BKDR Hash Function
  * From https://byvoid.com/zhs/blog/string-hash-compare/
  */
-unsigned int BKDRHash(char *str)
+uint32_t BKDRHash(char *str)
 {
 	unsigned int seed = 131; // 31 131 1313 13131 131313 etc..
 	unsigned int hash = 0;

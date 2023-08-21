@@ -35,8 +35,8 @@ thgenpwd mypwd Google 16
 ```
 <br>`ThGpAPI.h` provides two methods:<br/>
 ```c
-void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
-void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 ```
 ### Explanation of names
 <br>There is too much complex content here, and I cannot write it fluently in English, so please refer to the Chinese introduction [here](./README.zh-cn.md#%E5%85%B6%E4%B8%AD%E5%90%8D%E7%A7%B0%E7%9A%84%E8%A7%A3%E9%87%8A).<br/>

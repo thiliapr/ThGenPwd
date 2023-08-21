@@ -50,15 +50,15 @@ thgenpwd [mainpwd] [name] [size]
 thgenpwd mypwd Google 16
 ```
 ## 作为库使用
-<br>作为库使用只需要`GpAPI.c`和`GpAPI.h`两个文件。<br/>
+<br>作为库使用只需要`ThGpAPI.c`和`ThGpAPI.h`两个文件。<br/>
 <br>引用:<br/>
 ```c
-#include "GpAPI.h"
+#include "ThGpAPI.h"
 ```
-<br>`GpAPI.h`提供了两个方法:<br/>
+<br>`ThGpAPI.h`提供了两个方法:<br/>
 ```c
-void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
-void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 ```
 ### 其中名称的解释
 <br>`outstream`: 输出的文件流<br/>

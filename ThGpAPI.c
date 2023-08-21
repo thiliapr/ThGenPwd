@@ -19,19 +19,19 @@
  *  Email: tpr4int@skiff.com
  */
 
-#include "GpAPI.h"
+#include "ThGpAPI.h"
 
 unsigned int find_up_prime(unsigned int number);
 _Bool isprime(unsigned int number);
 char get_pwd_char(unsigned int serial, char *pwd_chars, unsigned int pwd_chars_count);
 unsigned int BKDRHash(char *str);
 
-void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
+void ThGenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
 {
 	GenPasswd(outstream, BKDRHash(a), BKDRHash(b), maxsize, sizedst, pwd_chars, pwd_chars_count);
 }
 
-void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
+void ThGenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
 {
 	//Setting env
 	unsigned int size = 0;

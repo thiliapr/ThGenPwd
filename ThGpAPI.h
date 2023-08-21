@@ -19,8 +19,8 @@
  *  Email: tpr4int@skiff.com
  */
 
-#ifndef GPAPI_H
-#define GPAPI_H
+#ifndef THGPAPI_H
+#define THGPAPI_H
 
 #include <string.h>
 #include <stdio.h>
@@ -29,7 +29,7 @@
 
 #define DEFAULT_PWD_CHARS "`_~@#$%^&*-=:;,.-"
 
-void GenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
-void GenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
+void ThGenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count);
 
 #endif

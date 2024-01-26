@@ -1,7 +1,7 @@
 /*
  *  Password Generator in C.
  *  This is a program for users to call GpAPI to generate password. 
- *  Copyright (C) 2023  Thilia
+ *  Copyright (C) 2023-2024  Thilia
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -51,6 +51,6 @@ int main(int argc, char const *argv[])
 		printf("Size = ");
 		scanf("%u", &maxsize);
 	}
-	GenPasswdByString(stdout, args[0], args[1], maxsize, NULL, NULL, 0);
+	ThGenPasswdByString(stdout, args[0], args[1], maxsize, NULL, NULL, 0);
 	return 0;
 }

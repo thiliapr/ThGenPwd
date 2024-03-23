@@ -28,7 +28,7 @@ unsigned int BKDRHash(char *str);
 
 void ThGenPasswdByString(FILE *outstream, char *a, char *b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)
 {
-	GenPasswd(outstream, BKDRHash(a), BKDRHash(b), maxsize, sizedst, pwd_chars, pwd_chars_count);
+	ThGenPasswd(outstream, BKDRHash(a), BKDRHash(b), maxsize, sizedst, pwd_chars, pwd_chars_count);
 }
 
 void ThGenPasswd(FILE *outstream, uint64_t a, uint64_t b, unsigned int maxsize, volatile unsigned int *sizedst, char *pwd_chars, unsigned int pwd_chars_count)

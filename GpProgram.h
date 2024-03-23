@@ -24,6 +24,6 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "GpAPI.h"
+#include "ThGpAPI.h"
 
 #endif
